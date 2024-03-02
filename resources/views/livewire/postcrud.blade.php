@@ -53,7 +53,7 @@
                                 Edit
                             </button>
 
-                            <button x-on:click="() => $wire.confirmDelete('{{ $post->id }}')"
+                            <button x-on:click="() => $wire.delete('{{ $post->id }}')"
                                 class="mt-2 inline-block px-2 py-1 bg-red-500 text-white cursor-pointer rounded">
                                 Delete
                             </button>
