@@ -7,3 +7,5 @@ MySql is used as the database, please config the database name and host in .env 
 After completing the config, run php artisan:migrate to update the database
 
 To start the application, please run php artisan serve
+
+Once the application is running in your local, please register a new account to log in to the system.
