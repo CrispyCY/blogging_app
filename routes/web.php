@@ -17,6 +17,8 @@ use App\Livewire\Postcrud;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', [PostController::class, 'index'])->name('home');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 Route::middleware([
     'auth:sanctum',
@@ -25,5 +27,4 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', Postcrud::class)->name('dashboard');
     // Route for displaying the post
-    Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 });

@@ -14,7 +14,7 @@ class PostController extends Component
     public function index()
     {
         // Logic to retrieve blog posts (e.g., from a database)
-        $posts = Post::latest()->load('createdBy')->get();
+        $posts = Post::latest()->with('createdBy')->get();
 
         return view('dashboard', compact('posts'));
     }

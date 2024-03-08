@@ -9,3 +9,7 @@ After completing the config, run php artisan:migrate to update the database
 To start the application, please run php artisan serve
 
 Once the application is running in your local, please register a new account to log in to the system.
+
+To view all posts without logging in, please go to Home tab
+
+To perform CRUD to post, please log into the system and go to Dashboard tab
